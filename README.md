@@ -1,16 +1,57 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**Suryaflame5/Suryaflame5** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# P. Suryanarayanan
 
-Here are some ideas to get you started:
+### AI & Machine Learning Engineer
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Building intelligent software that learns, reasons, and solves real-world problems.
+
+</div>
+
+---
+
+## 🚀 About Me
+
+- 🎓 B.Tech Computer Science & Engineering (AI & ML)
+- 🤖 Passionate about Artificial Intelligence and Machine Learning
+- 🧠 Interested in Computer Vision, NLP, LLMs and AI Agents
+- 💻 Currently building AI applications and end-to-end ML projects
+- 🌱 Always learning new technologies
+
+---
+
+## 🛠 Tech Stack
+
+**Languages**
+
+Python • JavaScript • SQL
+
+**Machine Learning**
+
+Scikit-learn • TensorFlow • PyTorch • OpenCV • NumPy • Pandas
+
+**AI**
+
+LLMs • Ollama • LangChain • Hugging Face • Computer Vision • NLP
+
+**Development**
+
+React • Node.js • FastAPI • Git • GitHub
+
+---
+
+## 📂 Featured Projects
+
+- 🤖 Autonomous AI Assistant
+- 🧠 Machine Learning Projects
+- 👁 Computer Vision Projects
+- 💬 NLP Projects
+- 📊 Data Science Projects
+
+---
+
+## 📫 Connect
+
+GitHub: https://github.com/Suryaflame5
+
+</div>
