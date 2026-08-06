@@ -74,3 +74,8 @@ GitHub: https://github.com/Suryaflame5
 <img src="https://streak-stats.demolab.com?user=Suryaflame5&theme=tokyonight&hide_border=true"/>
 
 </p>
+---
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Suryaflame5&label=Profile%20Views&color=7C3AED&style=for-the-badge" />
+</p>
