@@ -67,3 +67,10 @@ GitHub: https://github.com/Suryaflame5
 <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Suryaflame5&layout=compact&theme=tokyonight&hide_border=true"/>
 
 </p>
+## 🔥 Contribution Streak
+
+<p align="center">
+
+<img src="https://streak-stats.demolab.com?user=Suryaflame5&theme=tokyonight&hide_border=true"/>
+
+</p>
