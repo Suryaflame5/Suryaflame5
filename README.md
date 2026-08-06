@@ -56,3 +56,14 @@ React • Node.js • FastAPI • Git • GitHub
 GitHub: https://github.com/Suryaflame5
 
 </div>
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Suryaflame5&show_icons=true&theme=tokyonight&hide_border=true"/>
+
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Suryaflame5&layout=compact&theme=tokyonight&hide_border=true"/>
+
+</p>
