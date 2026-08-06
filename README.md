@@ -2,9 +2,7 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&height=280&color=0:0F172A,100:7C3AED&text=P.%20Suryanarayanan&fontColor=ffffff&fontSize=50&animation=fadeIn&fontAlignY=40&desc=AI%20%7C%20Machine%20Learning%20%7C%20Autonomous%20Systems&descAlignY=60" />
 </p>
 <div align="center">
-
-# P. Suryanarayanan
-
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&size=28&pause=1200&color=7C3AED&center=true&vCenter=true&width=900&lines=P.+Suryanarayanan;AI+%26+Machine+Learning+Engineer;Building+Intelligent+Software;Machine+Learning+%7C+Computer+Vision;Large+Language+Models" />
 ### AI & Machine Learning Engineer
 
 Building intelligent software that learns, reasons, and solves real-world problems.
