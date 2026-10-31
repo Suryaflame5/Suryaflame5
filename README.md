@@ -1,146 +1,112 @@
 <div align="center">
-  <img src="./assets/hero-3d.svg" width="100%" alt="P. Suryanarayanan — AI/ML & Systems Software Engineer" />
+  <img src="./assets/hero-cinematic.svg" width="100%" alt="P. Suryanarayanan — Systems & Real-Time Software" />
 </div>
 
 <br />
 
 <div align="center">
-  <a href="mailto:suryaflame2007@gmail.com"><img src="https://img.shields.io/badge/Email-suryaflame2007%40gmail.com-00f2fe?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email" /></a>
-  <a href="https://www.linkedin.com/in/surya-narayanan-157976396/"><img src="https://img.shields.io/badge/LinkedIn-Surya%20Narayanan-7928ca?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117" alt="LinkedIn" /></a>
-  <img src="https://img.shields.io/badge/Location-India%20[IST]-10b981?style=for-the-badge&logo=googlemaps&logoColor=white&labelColor=0d1117" alt="Location" />
-  <img src="https://img.shields.io/badge/Status-Open%20to%20Roles-ff0080?style=for-the-badge&logo=statuspage&logoColor=white&labelColor=0d1117" alt="Status" />
-</div>
-
-<br />
-
-<!-- Real-time Animated System Performance HUD -->
-<div align="center">
-  <img src="./assets/system-metrics.svg" width="100%" alt="System Telemetry & Performance Gauges" />
+  <a href="mailto:suryaflame2007@gmail.com"><strong>Email</strong></a>&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/surya-narayanan-157976396/"><strong>LinkedIn</strong></a>&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/Suryaflame5?tab=repositories"><strong>Repositories</strong></a>&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;
+  <span>Chennai, India</span>
 </div>
 
 <br />
 
 <div align="center">
-  <img src="./assets/divider.svg" width="100%" alt="Divider" />
+  <img src="./assets/divider-cinematic.svg" width="100%" alt="Divider" />
 </div>
 
-### 01 / Selected Flagship Systems
+### Overview
+
+I build low-latency systems software, native Android audio engines, and practical computer vision pipelines.
+
+Most of my work sits at the intersection between software and hardware constraints—handling network packet jitter, audio buffer under-runs, clock drift between unsynchronized devices, and extracting verifiable structured data from noisy scanned documents.
+
+---
+
+### Selected Engineering Work
+
+#### 01 / WePlay — Universal Synchronized Audio Sharing
+> **Repository:** [github.com/Suryaflame5/WePlay](https://github.com/Suryaflame5/WePlay)  
+> **Core Stack:** Kotlin, Android NDK, C++, AAudio / Oboe, Bluetooth LE Audio (Auracast), Wi-Fi Multicast (UDP)
+
+<div align="center">
+  <a href="https://github.com/Suryaflame5/WePlay">
+    <img src="./assets/schematic-weplay.svg" width="100%" alt="WePlay Architecture Schematic" />
+  </a>
+</div>
+
+* **Problem:** Android's default Java audio path introduces variable latency (often 40ms+) and unpredictable garbage collection pauses, making synchronized multi-device playback drift out of phase within seconds.
+* **Engineering Solution:**
+  * Bypassed the Java audio server using the **Android NDK** and native `AAudio` / `Oboe` bindings to stream raw 48 kHz / 16-bit PCM samples through a custom lock-free circular ring buffer.
+  * Implemented linear regression clock drift estimation to align remote playback clocks within sub-millisecond tolerances.
+  * Packaged audio frames into sequenced UDP multicast packets with forward error correction (FEC) for simultaneous Wi-Fi and Bluetooth LE Audio (Auracast Broadcast Isochronous Streams) distribution.
+
+<br />
+
+#### 02 / DocuMind — Traceable Document Intelligence
+> **Repository:** [github.com/Suryaflame5/documind](https://github.com/Suryaflame5/documind)  
+> **Core Stack:** Python, PyTorch, OpenCV, Scikit-Learn, FastAPI, Docker
+
+<div align="center">
+  <a href="https://github.com/Suryaflame5/documind">
+    <img src="./assets/schematic-documind.svg" width="100%" alt="DocuMind Architecture Schematic" />
+  </a>
+</div>
+
+* **Problem:** Commercial LLM-based document parsers are prone to hallucinating numerical fields, invoice IDs, and critical metadata when dealing with skewed, low-resolution, or non-standard scanned documents.
+* **Engineering Solution:**
+  * Created a deterministic multi-stage vision pipeline that normalizes incoming scans via OpenCV deskewing and Otsu thresholding before spatial OCR token extraction.
+  * Built a hybrid PyTorch visual-textual classification model that recognizes document layouts without relying on generative LLMs.
+  * Enforced **100% pixel provenance**: every extracted key-value entity maps directly to its `[x0, y0, x1, y1]` bounding-box coordinates on the original source scan, providing a verifiable audit trail for downstream APIs.
+
+<br />
+
+#### 03 / Specialized Systems
 
 <div align="center">
   <table border="0" cellspacing="12" cellpadding="0" width="100%">
     <tr>
       <td width="50%" align="center">
-        <a href="https://github.com/Suryaflame5/documind">
-          <img src="./assets/card-documind.svg" width="100%" alt="DocuMind — Enterprise Document Intelligence" />
-        </a>
-      </td>
-      <td width="50%" align="center">
-        <a href="https://github.com/Suryaflame5/WePlay">
-          <img src="./assets/card-weplay.svg" width="100%" alt="WePlay — Low-Latency Audio Streaming" />
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td width="50%" align="center">
         <a href="https://github.com/Suryaflame5/pricepilot">
-          <img src="./assets/card-pricepilot.svg" width="100%" alt="PricePilot — Time-Series Risk Engine" />
+          <img src="./assets/schematic-pricepilot.svg" width="100%" alt="PricePilot Architecture Schematic" />
         </a>
       </td>
       <td width="50%" align="center">
         <a href="https://github.com/Suryaflame5/SubSentry">
-          <img src="./assets/card-subsentry.svg" width="100%" alt="SubSentry — Graph Cadence Engine" />
+          <img src="./assets/schematic-subsentry.svg" width="100%" alt="SubSentry Architecture Schematic" />
         </a>
       </td>
     </tr>
   </table>
 </div>
 
-<br />
+* **[PricePilot](https://github.com/Suryaflame5/pricepilot)**: Vectorized financial time-series risk engine written in Python (NumPy, pandas). Computes rolling exponentially weighted moving average (EWMA) volatility windows and value-at-risk (VaR) drawdown boundaries for backtested strategies.
+* **[SubSentry](https://github.com/Suryaflame5/SubSentry)**: Local-first subscription cadence detector built with TypeScript and SQLite. Analyzes irregular transaction interval clusters to detect recurring billing cycles without transmitting financial data to external cloud servers.
 
 ---
 
-### 02 / Technical Arsenal
+### Technical Focus & Tooling
 
-<div align="center">
-
-#### Core Languages
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" />
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-</p>
-
-#### AI, Machine Learning & Vision
-<p>
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="Scikit-Learn" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
-  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face" />
-  <img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white" alt="Ollama" />
-</p>
-
-#### Systems, Protocols & Architecture
-<p>
-  <img src="https://img.shields.io/badge/Android%20NDK-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android NDK" />
-  <img src="https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socketdotio&logoColor=white" alt="WebSockets" />
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-</p>
-
-</div>
-
-<br />
+| Domain | Technologies & Systems | Focus Areas |
+| :--- | :--- | :--- |
+| **Languages & Runtimes** | `C++`, `Kotlin`, `Python`, `TypeScript`, `SQL` | Lock-free structures, native interop (JNI/NDK), asynchronous I/O |
+| **Systems & Audio** | `Android NDK`, `AAudio / Oboe`, `WebSockets`, `UDP Multicast`, `Bluetooth LE Audio` | Jitter buffering, clock synchronization, sub-20ms audio latency |
+| **Machine Learning & Vision** | `PyTorch`, `OpenCV`, `Scikit-Learn`, `FastAPI`, `Tesseract` | Layout analysis, token spatial graphs, deterministic field extraction |
+| **Infrastructure & Data** | `Docker`, `PostgreSQL`, `SQLite`, `Git`, `Linux (Debian/Ubuntu)` | Zero-copy pipelines, local-first schemas, containerized reproducible builds |
 
 ---
 
-### 03 / Engineering Principles
+### Working Principles
 
-```
-┌──────────────────────────────┬────────────────────────────────────────────────────────┐
-│ PRINCIPLE                    │ OPERATIONAL REALITY                                    │
-├──────────────────────────────┼────────────────────────────────────────────────────────┤
-│ 01 · Baseline First          │ Never adopt complex neural models or distributed       │
-│                              │ layers without beating a simple statistical baseline.  │
-├──────────────────────────────┼────────────────────────────────────────────────────────┤
-│ 02 · Honest Confidence Bounds│ Separate measured F1/accuracy from hypothesized claims.│
-│                              │ Report p95 latency, tail risk, and failure modes.      │
-├──────────────────────────────┼────────────────────────────────────────────────────────┤
-│ 03 · Zero-Setup Friction     │ Every repo must build in under 3 commands via Docker    │
-│                              │ or virtual environments with explicit schemas.         │
-├──────────────────────────────┼────────────────────────────────────────────────────────┤
-│ 04 · Degraded-State Resilient│ Audio buffers drift, networks drop packets, schemas    │
-│                              │ corrupt. Systems must degrade gracefully by design.    │
-└──────────────────────────────┴────────────────────────────────────────────────────────┘
-```
-
-<br />
-
----
-
-### 04 / GitHub Telemetry & Velocity
-
-<div align="center">
-  <table border="0">
-    <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=Suryaflame5&show_icons=true&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=00f2fe&icon_color=38bdf8&text_color=94a3b8" alt="GitHub Stats" width="440" />
-      </td>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Suryaflame5&layout=compact&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=00f2fe&text_color=94a3b8" alt="Top Languages" width="440" />
-      </td>
-    </tr>
-  </table>
-</div>
+* **Start with simple baselines:** Measure a simple heuristic or statistical model before introducing deep networks or distributed complexity.
+* **Verifiable outputs:** In production systems, knowing *where* data came from (pixel coordinates, packet sequence numbers) matters as much as the value itself.
+* **Degrade gracefully:** Audio packets will drop, network latency will spike, and document scans will be blurred. Systems should recover cleanly without unhandled panics or memory leaks.
 
 <br />
 
 <div align="center">
-  <img src="./assets/divider.svg" width="100%" alt="Divider" />
-  <p><sub>Crafted with 3D vector geometry, deterministic engineering, and zero compromise.</sub></p>
+  <img src="./assets/divider-cinematic.svg" width="100%" alt="Divider" />
+  <p><sub>P. Suryanarayanan · Chennai, India · <a href="mailto:suryaflame2007@gmail.com">suryaflame2007@gmail.com</a></sub></p>
 </div>

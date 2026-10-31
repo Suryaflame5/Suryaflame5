@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 210" width="100%" height="100%" style="background:#090b10; display:block; border-radius:10px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <style>
+      .mono { font-family: 'SF Mono', 'Fira Code', 'Roboto Mono', Menlo, monospace; }
+      @keyframes tickFlow {
+        0% { stroke-dashoffset: 80; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .tick-stream {
+        stroke-dasharray: 8 24;
+        animation: tickFlow 3s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <rect width="440" height="210" rx="10" fill="#090b10" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Top bar -->
+  <rect x="20" y="18" width="84" height="20" rx="4" fill="#d97706" fill-opacity="0.15" stroke="#f59e0b" stroke-width="0.8"/>
+  <text x="62" y="32" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#fbbf24">PRICEPILOT</text>
+  <text x="114" y="32" font-size="13" font-weight="600" fill="#f1f5f9">Time-Series Risk Engine</text>
+
+  <text x="20" y="56" font-size="11" fill="#94a3b8">
+    Statistical volatility modeling &amp; backtesting engine with rolling VaR and drawdown limits.
+  </text>
+
+  <!-- Flow Schematic -->
+  <g transform="translate(20, 72)">
+    <rect width="400" height="118" rx="6" fill="#0d1117" stroke="#1a202c" stroke-width="1"/>
+
+    <!-- Signal Line -->
+    <line x1="30" y1="44" x2="370" y2="44" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="30" y1="44" x2="370" y2="44" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.7" class="tick-stream"/>
+
+    <!-- Node 1: Ingest -->
+    <g transform="translate(16, 18)">
+      <rect width="105" height="52" rx="4" fill="#131823" stroke="#f59e0b" stroke-width="0.7"/>
+      <text x="52" y="22" text-anchor="middle" class="mono" font-size="9" font-weight="600" fill="#fde68a">Streaming Ticks</text>
+      <text x="52" y="35" text-anchor="middle" class="mono" font-size="8" fill="#64748b">Vectorized Ingest</text>
+      <text x="52" y="44" text-anchor="middle" class="mono" font-size="8" fill="#475569">NumPy / Pandas</text>
+    </g>
+
+    <!-- Node 2: Volatility Window -->
+    <g transform="translate(148, 18)">
+      <rect width="105" height="52" rx="4" fill="#131823" stroke="#d97706" stroke-width="0.7"/>
+      <text x="52" y="22" text-anchor="middle" class="mono" font-size="9" font-weight="600" fill="#fcd34d">Rolling Window</text>
+      <text x="52" y="35" text-anchor="middle" class="mono" font-size="8" fill="#64748b">EWMA Volatility</text>
+      <text x="52" y="44" text-anchor="middle" class="mono" font-size="8" fill="#475569">Tail-Risk Estimate</text>
+    </g>
+
+    <!-- Node 3: Risk Evaluation -->
+    <g transform="translate(280, 18)">
+      <rect width="105" height="52" rx="4" fill="#131823" stroke="#10b981" stroke-width="0.7"/>
+      <text x="52" y="22" text-anchor="middle" class="mono" font-size="9" font-weight="600" fill="#6ee7b7">Risk Bounds</text>
+      <text x="52" y="35" text-anchor="middle" class="mono" font-size="8" fill="#64748b">Drawdown Guard</text>
+      <text x="52" y="44" text-anchor="middle" class="mono" font-size="8" fill="#475569">Backtested Bounds</text>
+    </g>
+
+    <!-- Tech specs footer -->
+    <text x="200" y="100" text-anchor="middle" class="mono" font-size="9" fill="#64748b">PYTHON · NUMPY · PANDAS · TIME-SERIES STATS</text>
+  </g>
+</svg>

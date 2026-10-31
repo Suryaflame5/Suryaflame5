@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 220" width="100%" height="100%" style="background:#090b10; display:block; border-radius:10px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="dmCardGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#090b10" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <linearGradient id="tensorFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <style>
+      .mono { font-family: 'SF Mono', 'Fira Code', 'Roboto Mono', Menlo, monospace; }
+      @keyframes docFlow {
+        0% { stroke-dashoffset: 160; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .tensor-stream {
+        stroke-dasharray: 12 40;
+        animation: docFlow 4s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Border & Base -->
+  <rect width="920" height="220" rx="10" fill="url(#dmCardGlow)" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Top Bar: Title & Domain -->
+  <g>
+    <!-- Project ID -->
+    <rect x="32" y="24" width="86" height="20" rx="4" fill="#047857" fill-opacity="0.2" stroke="#059669" stroke-width="0.8"/>
+    <text x="75" y="38" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#34d399">DOCUMIND</text>
+
+    <!-- Project Title & Summary -->
+    <text x="130" y="39" font-size="15" font-weight="600" fill="#f1f5f9">Verifiable Document Intelligence Pipeline</text>
+    <text x="920 - 32" y="38" text-anchor="end" class="mono" font-size="11" fill="#64748b">PYTHON · PYTORCH · OPENCV · SCIKIT-LEARN · FASTAPI · DOCKER</text>
+  </g>
+
+  <!-- Subtitle line -->
+  <text x="32" y="66" font-size="12" fill="#94a3b8">
+    Multi-stage computer vision extraction architecture binding extracted entities to exact pixel bounding-box coordinates for zero hallucination.
+  </text>
+
+  <!-- Real Architecture Pipeline Diagram -->
+  <g transform="translate(32, 90)">
+    <!-- Pipeline Background Area -->
+    <rect width="856" height="96" rx="6" fill="#0d1117" stroke="#1a202c" stroke-width="1"/>
+
+    <!-- Connecting Bus Line -->
+    <line x1="80" y1="48" x2="770" y2="48" stroke="#1e293b" stroke-width="2"/>
+    <line x1="80" y1="48" x2="770" y2="48" stroke="url(#tensorFlow)" stroke-width="2" class="tensor-stream"/>
+
+    <!-- Stage 1: Ingest & Pre-Processing -->
+    <g transform="translate(30, 18)">
+      <rect width="130" height="60" rx="5" fill="#131823" stroke="#059669" stroke-width="0.8"/>
+      <text x="65" y="26" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#6ee7b7">Spatial Normalization</text>
+      <text x="65" y="42" text-anchor="middle" class="mono" font-size="9" fill="#64748b">OpenCV Deskew</text>
+      <text x="65" y="52" text-anchor="middle" class="mono" font-size="8" fill="#475569">Otsu Dynamic Threshold</text>
+    </g>
+
+    <!-- Arrow 1 to 2 -->
+    <polygon points="175,48 168,44 168,52" fill="#34d399"/>
+
+    <!-- Stage 2: Token Bounding-Box Layout -->
+    <g transform="translate(190, 18)">
+      <rect width="150" height="60" rx="5" fill="#131823" stroke="#0284c7" stroke-width="0.8"/>
+      <text x="75" y="26" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#38bdf8">Geometry &amp; OCR Engine</text>
+      <text x="75" y="42" text-anchor="middle" class="mono" font-size="9" fill="#64748b">Token [x0, y0, x1, y1] BBox</text>
+      <text x="75" y="52" text-anchor="middle" class="mono" font-size="8" fill="#475569">Spatial Layout Graph</text>
+    </g>
+
+    <!-- Arrow 2 to 3 -->
+    <polygon points="355,48 348,44 348,52" fill="#38bdf8"/>
+
+    <!-- Stage 3: Neural Classification -->
+    <g transform="translate(370, 18)">
+      <rect width="150" height="60" rx="5" fill="#131823" stroke="#6366f1" stroke-width="0.8"/>
+      <text x="75" y="26" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#a5b4fc">PyTorch Visual Classifier</text>
+      <text x="75" y="42" text-anchor="middle" class="mono" font-size="9" fill="#64748b">Document Type Inference</text>
+      <text x="75" y="52" text-anchor="middle" class="mono" font-size="8" fill="#475569">Feature Tensor Mapping</text>
+    </g>
+
+    <!-- Arrow 3 to 4 -->
+    <polygon points="535,48 528,44 528,52" fill="#818cf8"/>
+
+    <!-- Stage 4: Deterministic Field Extractor -->
+    <g transform="translate(550, 18)">
+      <rect width="130" height="60" rx="5" fill="#131823" stroke="#d97706" stroke-width="0.8"/>
+      <text x="65" y="26" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#fcd34d">Provenance Auditor</text>
+      <text x="65" y="42" text-anchor="middle" class="mono" font-size="9" fill="#64748b">Strict Regex &amp; Proximity</text>
+      <text x="65" y="52" text-anchor="middle" class="mono" font-size="8" fill="#475569">Confidence Bounds</text>
+    </g>
+
+    <!-- Arrow 4 to 5 -->
+    <polygon points="695,48 688,44 688,52" fill="#f59e0b"/>
+
+    <!-- Stage 5: Output Sinks -->
+    <g transform="translate(710, 18)">
+      <rect width="126" height="60" rx="5" fill="#131823" stroke="#3b82f6" stroke-width="0.8"/>
+      <text x="63" y="26" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#93c5fd">FastAPI Dispatch</text>
+      <text x="63" y="42" text-anchor="middle" class="mono" font-size="9" fill="#64748b">Typed JSON Payload</text>
+      <text x="63" y="52" text-anchor="middle" class="mono" font-size="8" fill="#475569">Pixel-Audit Coordinates</text>
+    </g>
+  </g>
+</svg>
