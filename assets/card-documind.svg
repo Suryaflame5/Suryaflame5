@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 210" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="dm-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="60%" stop-color="#38bdf8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="dm-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1324"/>
+      <stop offset="100%" stop-color="#070a12"/>
+    </linearGradient>
+    <filter id="dm-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+      @keyframes floatDoc {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-6px) rotate(1deg); }
+      }
+      @keyframes scanBeam {
+        0% { transform: translateY(0px); opacity: 0.8; }
+        100% { transform: translateY(60px); opacity: 0.2; }
+      }
+      .floating-doc { animation: floatDoc 4s ease-in-out infinite; }
+      .scan-line { animation: scanBeam 2.5s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="460" height="210" rx="14" fill="url(#dm-grad)"/>
+  <rect width="458" height="208" x="1" y="1" rx="13" fill="none" stroke="url(#dm-border)" stroke-width="1.2"/>
+
+  <!-- Top Metadata Bar -->
+  <g transform="translate(24, 22)">
+    <rect x="0" y="0" width="80" height="20" rx="4" fill="#0369a1" fill-opacity="0.25" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="8" y="14" class="mono" font-size="9" font-weight="700" fill="#38bdf8" letter-spacing="1">SYSTEM 01</text>
+    <text x="96" y="14" class="mono" font-size="9" fill="#64748b">AI INFERENCE &amp; OCR</text>
+  </g>
+
+  <!-- Project Title & Subtitle -->
+  <g transform="translate(24, 66)">
+    <text x="0" y="0" class="sans" font-size="22" font-weight="800" fill="#f8fafc" letter-spacing="-0.5">DocuMind</text>
+    <text x="110" y="-3" class="mono" font-size="11" font-weight="600" fill="#38bdf8">↗ [Source Code]</text>
+    
+    <text x="0" y="24" class="sans" font-size="12" fill="#94a3b8">
+      Enterprise Document Intelligence &amp; Bounded Extraction
+    </text>
+    <text x="0" y="42" class="sans" font-size="11.5" fill="#64748b">
+      PyTorch layout models, confidence scoring &amp; audit trails.
+    </text>
+  </g>
+
+  <!-- Tech Badges -->
+  <g transform="translate(24, 140)">
+    <rect x="0" y="0" width="60" height="22" rx="4" fill="#0f172a" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="12" y="15" class="mono" font-size="9.5" fill="#cbd5e1">PyTorch</text>
+
+    <rect x="68" y="0" width="58" height="22" rx="4" fill="#0f172a" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="80" y="15" class="mono" font-size="9.5" fill="#cbd5e1">FastAPI</text>
+
+    <rect x="134" y="0" width="52" height="22" rx="4" fill="#0f172a" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="144" y="15" class="mono" font-size="9.5" fill="#cbd5e1">Docker</text>
+
+    <rect x="194" y="0" width="62" height="22" rx="4" fill="#0f172a" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="204" y="15" class="mono" font-size="9.5" fill="#cbd5e1">Tesseract</text>
+  </g>
+
+  <!-- 3D Isometric Document Graphic on Right -->
+  <g transform="translate(370, 105)" class="floating-doc">
+    <!-- 3D Sheet Base -->
+    <polygon points="0,-45 42,-22 0,0 -42,-22" fill="#0284c7" opacity="0.4"/>
+    <polygon points="-42,-22 0,0 0,48 -42,26" fill="#0369a1"/>
+    <polygon points="0,0 42,-22 42,26 0,48" fill="#38bdf8"/>
+    
+    <!-- Code Lines on 3D Sheet -->
+    <line x1="8" y1="-8" x2="30" y2="-19" stroke="#ffffff" stroke-width="1.8" opacity="0.8"/>
+    <line x1="8" y1="4" x2="32" y2="-8" stroke="#ffffff" stroke-width="1.8" opacity="0.6"/>
+    <line x1="8" y1="16" x2="26" y2="7" stroke="#ffffff" stroke-width="1.8" opacity="0.6"/>
+
+    <!-- Glowing Scan Line -->
+    <line x1="-38" y1="-18" x2="38" y2="-18" stroke="#00f2fe" stroke-width="2" filter="url(#dm-glow)" class="scan-line"/>
+  </g>
+</svg>

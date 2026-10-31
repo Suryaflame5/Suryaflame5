@@ -1,123 +1,146 @@
 <div align="center">
-  <img src="./assets/header.svg" width="100%" alt="P. Suryanarayanan — AI/ML & Systems Software Engineer" />
+  <img src="./assets/hero-3d.svg" width="100%" alt="P. Suryanarayanan — AI/ML & Systems Software Engineer" />
 </div>
 
-<p align="center">
-  <a href="#flagship-systems"><strong>01 / FLAGSHIP SYSTEMS</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="#technical-arsenal"><strong>02 / TECHNICAL ARSENAL</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="#engineering-standards"><strong>03 / ENGINEERING PRINCIPLES</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="#contact"><strong>04 / CONTACT</strong></a>
+<br />
+
+<div align="center">
+  <a href="mailto:suryaflame2007@gmail.com"><img src="https://img.shields.io/badge/Email-suryaflame2007%40gmail.com-00f2fe?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email" /></a>
+  <a href="https://www.linkedin.com/in/surya-narayanan-157976396/"><img src="https://img.shields.io/badge/LinkedIn-Surya%20Narayanan-7928ca?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117" alt="LinkedIn" /></a>
+  <img src="https://img.shields.io/badge/Location-India%20[IST]-10b981?style=for-the-badge&logo=googlemaps&logoColor=white&labelColor=0d1117" alt="Location" />
+  <img src="https://img.shields.io/badge/Status-Open%20to%20Roles-ff0080?style=for-the-badge&logo=statuspage&logoColor=white&labelColor=0d1117" alt="Status" />
+</div>
+
+<br />
+
+<!-- Real-time Animated System Performance HUD -->
+<div align="center">
+  <img src="./assets/system-metrics.svg" width="100%" alt="System Telemetry & Performance Gauges" />
+</div>
+
+<br />
+
+<div align="center">
+  <img src="./assets/divider.svg" width="100%" alt="Divider" />
+</div>
+
+### 01 / Selected Flagship Systems
+
+<div align="center">
+  <table border="0" cellspacing="12" cellpadding="0" width="100%">
+    <tr>
+      <td width="50%" align="center">
+        <a href="https://github.com/Suryaflame5/documind">
+          <img src="./assets/card-documind.svg" width="100%" alt="DocuMind — Enterprise Document Intelligence" />
+        </a>
+      </td>
+      <td width="50%" align="center">
+        <a href="https://github.com/Suryaflame5/WePlay">
+          <img src="./assets/card-weplay.svg" width="100%" alt="WePlay — Low-Latency Audio Streaming" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" align="center">
+        <a href="https://github.com/Suryaflame5/pricepilot">
+          <img src="./assets/card-pricepilot.svg" width="100%" alt="PricePilot — Time-Series Risk Engine" />
+        </a>
+      </td>
+      <td width="50%" align="center">
+        <a href="https://github.com/Suryaflame5/SubSentry">
+          <img src="./assets/card-subsentry.svg" width="100%" alt="SubSentry — Graph Cadence Engine" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br />
+
+---
+
+### 02 / Technical Arsenal
+
+<div align="center">
+
+#### Core Languages
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" />
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
 </p>
 
-<div align="center">
-  <img src="./assets/divider.svg" width="100%" alt="Divider" />
+#### AI, Machine Learning & Vision
+<p>
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="Scikit-Learn" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
+  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face" />
+  <img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white" alt="Ollama" />
+</p>
+
+#### Systems, Protocols & Architecture
+<p>
+  <img src="https://img.shields.io/badge/Android%20NDK-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android NDK" />
+  <img src="https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socketdotio&logoColor=white" alt="WebSockets" />
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+</p>
+
 </div>
 
-### 00 / Core Focus
+<br />
 
-I design and build **production-grade AI inference pipelines**, **low-latency mobile/systems software**, and **deterministic backend architectures**.
+---
 
-* **What I care about:** Systems that work after the demo—handling degraded network states, messy unstructured inputs, strict latency budgets, and verifiable metrics.
-* **Architecture over hype:** Separating measured system performance from marketing claims. Prioritizing reproducible benchmarks, explicit schemas, and clean error recovery over unprincipled complexity.
+### 03 / Engineering Principles
+
+```
+┌──────────────────────────────┬────────────────────────────────────────────────────────┐
+│ PRINCIPLE                    │ OPERATIONAL REALITY                                    │
+├──────────────────────────────┼────────────────────────────────────────────────────────┤
+│ 01 · Baseline First          │ Never adopt complex neural models or distributed       │
+│                              │ layers without beating a simple statistical baseline.  │
+├──────────────────────────────┼────────────────────────────────────────────────────────┤
+│ 02 · Honest Confidence Bounds│ Separate measured F1/accuracy from hypothesized claims.│
+│                              │ Report p95 latency, tail risk, and failure modes.      │
+├──────────────────────────────┼────────────────────────────────────────────────────────┤
+│ 03 · Zero-Setup Friction     │ Every repo must build in under 3 commands via Docker    │
+│                              │ or virtual environments with explicit schemas.         │
+├──────────────────────────────┼────────────────────────────────────────────────────────┤
+│ 04 · Degraded-State Resilient│ Audio buffers drift, networks drop packets, schemas    │
+│                              │ corrupt. Systems must degrade gracefully by design.    │
+└──────────────────────────────┴────────────────────────────────────────────────────────┘
+```
 
 <br />
 
 ---
 
-### <a id="flagship-systems"></a>01 / Flagship Systems
+### 04 / GitHub Telemetry & Velocity
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│ [01] DocuMind — Enterprise Document Intelligence & Field Extraction System             │
-│ PyTorch · Scikit-Learn · FastAPI · Tesseract OCR · Docker · Python                     │
-└────────────────────────────────────────────────────────────────────────────────────────┘
-```
-> **Repository:** [github.com/Suryaflame5/documind](https://github.com/Suryaflame5/documind)
-* **Architecture:** Multi-stage extraction pipeline combining document layout analysis, PyTorch visual feature classification, and rule-bounded entity recognition.
-* **Engineering Challenge:** Eliminating hallucination risks in automated document parsing by establishing deterministic confidence intervals and verifiable audit trails for every extracted field.
-* **Key Capabilities:**
-  * Sub-second multi-page document classification across diverse scanned document formats.
-  * Traceable bounding-box coordinate mapping linking raw image pixels to API payload outputs.
-  * Asynchronous batch worker queue designed for horizontal container scaling.
-
-```
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│ [02] WePlay — Universal Audio Sharing & Low-Latency Sync Protocol                      │
-│ Android · Kotlin · Audio HAL / NDK · WebSockets · Coroutines · Wi-Fi P2P              │
-└────────────────────────────────────────────────────────────────────────────────────────┘
-```
-> **Repository:** [github.com/Suryaflame5/WePlay](https://github.com/Suryaflame5/WePlay)
-* **Architecture:** Distributed companion audio streaming platform utilizing Bluetooth Auracast broadcasts alongside companion high-bandwidth local Wi-Fi multicast channels.
-* **Engineering Challenge:** Maintaining synchronized sub-20ms multi-device audio playback across varying Android hardware revisions without audio buffer underruns or clock drift.
-* **Key Capabilities:**
-  * Real-time master-clock synchronization algorithm with adaptive jitter-buffer compensation.
-  * Low-level Android AudioRecord / AudioTrack integration via native NDK bindings.
-  * Zero-configuration peer discovery over local LAN subnets without external internet dependency.
-
-```
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│ [03] PricePilot — Time-Series Forecasting & Uncertainty Decision Engine               │
-│ Python · Time-Series ML · Quantile Regression · Pandas · FastAPI                       │
-└────────────────────────────────────────────────────────────────────────────────────────┘
-```
-> **Repository:** [github.com/Suryaflame5/pricepilot](https://github.com/Suryaflame5/pricepilot)
-* **Architecture:** Statistical decision-support engine comparing predictive models on structured historical data with explicit uncertainty estimation bounds.
-* **Engineering Challenge:** Preventing lookahead data leakage in walk-forward backtesting pipelines and surfacing prediction intervals rather than deceptive single-point forecasts.
-* **Key Capabilities:**
-  * Rigorous out-of-sample backtesting framework with automated model degradation detection.
-  * Uncertainty-aware risk bounds quantifying prediction confidence during market volatility.
-  * Fast REST API providing interactive model comparison and historical error diagnostics.
-
-```
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│ [04] SubSentry — Recurring Transaction Pattern Analysis Engine                         │
-│ React · TypeScript · Graph Analysis · Web Workers · Financial Data Schemas             │
-└────────────────────────────────────────────────────────────────────────────────────────┘
-```
-> **Repository:** [github.com/Suryaflame5/SubSentry](https://github.com/Suryaflame5/SubSentry)
-* **Architecture:** Client-side financial intelligence system analyzing raw statement exports to detect recurring payment obligations and anomalous cost surges.
-* **Engineering Challenge:** Reconciling irregular billing cadences and inconsistent merchant descriptors without exposing raw user transaction data to remote servers.
-* **Key Capabilities:**
-  * 100% private in-browser analysis executed inside Web Workers with zero server data retention.
-  * Interval-consistency scoring engine identifying weekly, monthly, and seasonal billing cycles.
-  * Explainable evidence breakdown showing the exact transaction matches behind every flag.
+<div align="center">
+  <table border="0">
+    <tr>
+      <td>
+        <img src="https://github-readme-stats.vercel.app/api?username=Suryaflame5&show_icons=true&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=00f2fe&icon_color=38bdf8&text_color=94a3b8" alt="GitHub Stats" width="440" />
+      </td>
+      <td>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Suryaflame5&layout=compact&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=00f2fe&text_color=94a3b8" alt="Top Languages" width="440" />
+      </td>
+    </tr>
+  </table>
+</div>
 
 <br />
-
----
-
-### <a id="technical-arsenal"></a>02 / Technical Arsenal
-
-| Systems Layer | Stack & Tooling | Focus & Applications |
-| :--- | :--- | :--- |
-| **Languages** | `Python`, `TypeScript`, `Kotlin`, `JavaScript`, `SQL`, `C/C++` | Production backend, native Android, and data pipelines |
-| **Machine Learning & Vision** | `PyTorch`, `Scikit-Learn`, `OpenCV`, `Hugging Face`, `Ollama` | Document intelligence, classification, edge CV, local LLM runtimes |
-| **API & Backend Systems** | `FastAPI`, `Node.js`, `REST APIs`, `WebSockets`, `Asynchronous IO` | Low-latency streaming, event-driven architectures, scalable microservices |
-| **Client & Mobile Engineering**| `Android Native (Kotlin)`, `React`, `React Native / Expo`, `Tailwind CSS` | Device lockdown, audio streaming, responsive performance-critical web UIs |
-| **Infrastructure & Database** | `Docker`, `Git`, `PostgreSQL`, `Supabase`, `Linux Environments` | Containerized deployments, relational schemas, automated CI/CD workflows |
-
-<br />
-
----
-
-### <a id="engineering-standards"></a>03 / Engineering Principles
-
-* **Complexity Must Earn Its Place:** Every architecture starts with the simplest working baseline. Additional layers, microservices, or complex neural models must show measurable improvements on controlled evaluation benchmarks before adoption.
-* **Evidence Before Claims:** Clear reporting of edge cases, latency percentiles (p50/p95/p99), and known failure modes alongside successful tests.
-* **Inspectable & Reproducible:** Complete setup automation, explicit environmental configurations, and clean documentation so any engineer can reproduce results locally within minutes.
-* **Failure-Tolerant by Default:** Network degradation, malformed payloads, schema drift, and timeouts are treated as first-class citizens in system design, not afterthoughts.
-
-<br />
-
----
-
-### <a id="contact"></a>04 / Contact & Collaboration
-
-* **Direct Email:** [suryaflame2007@gmail.com](mailto:suryaflame2007@gmail.com)
-* **LinkedIn:** [linkedin.com/in/surya-narayanan-157976396](https://www.linkedin.com/in/surya-narayanan-157976396/)
-* **All Public Code:** [github.com/Suryaflame5?tab=repositories](https://github.com/Suryaflame5?tab=repositories)
 
 <div align="center">
   <img src="./assets/divider.svg" width="100%" alt="Divider" />
-  <p><sub>Architected with precision. Engineered for reliability.</sub></p>
+  <p><sub>Crafted with 3D vector geometry, deterministic engineering, and zero compromise.</sub></p>
 </div>
