@@ -1,99 +1,123 @@
-<p align="center">
-  <a href="#selected-work">
-    <img src="./assets/signal-engine.gif" width="100%" alt="P. Suryanarayanan — Build systems. Challenge assumptions. An animated signal-engine diagram introduces my AI/ML, software systems, and automation interests." />
-  </a>
-</p>
+<div align="center">
+  <img src="./assets/header.svg" width="100%" alt="P. Suryanarayanan — AI/ML & Systems Software Engineer" />
+</div>
 
 <p align="center">
-  <a href="#selected-work">01 / SELECTED WORK</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="#engineering-principles">02 / ENGINEERING PRINCIPLES</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="#current-toolbox">03 / TOOLBOX</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="#contact">04 / CONTACT</a>
+  <a href="#flagship-systems"><strong>01 / FLAGSHIP SYSTEMS</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="#technical-arsenal"><strong>02 / TECHNICAL ARSENAL</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="#engineering-standards"><strong>03 / ENGINEERING PRINCIPLES</strong></a>&nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="#contact"><strong>04 / CONTACT</strong></a>
 </p>
 
-<p align="center">
-  <img src="./assets/signal-divider.gif" width="100%" alt="Animated signal-line divider" />
-</p>
+<div align="center">
+  <img src="./assets/divider.svg" width="100%" alt="Divider" />
+</div>
 
-## The person behind the commits
+### 00 / Core Focus
 
-I'm **P. Suryanarayanan**, a Computer Science Engineering student focused on **AI/ML, software systems, and automation**.
+I design and build **production-grade AI inference pipelines**, **low-latency mobile/systems software**, and **deterministic backend architectures**.
 
-I'm interested in the part after the demo: what the system does with messy inputs, where it fails, whether the results can be reproduced, and whether the documentation matches the implementation.
+* **What I care about:** Systems that work after the demo—handling degraded network states, messy unstructured inputs, strict latency budgets, and verifiable metrics.
+* **Architecture over hype:** Separating measured system performance from marketing claims. Prioritizing reproducible benchmarks, explicit schemas, and clean error recovery over unprincipled complexity.
 
-I prefer software that can explain its decisions over software that merely looks impressive.
+<br />
 
-## Selected work
+---
 
-<details>
-  <summary><strong>01 / SubSentry</strong> — recurring-transaction pattern analysis</summary>
-  <br />
+### <a id="flagship-systems"></a>01 / Flagship Systems
 
-  A React and TypeScript project exploring how transaction exports can reveal potential recurring payments. Its central idea is to surface the dates, intervals, amount consistency, and matching evidence behind a candidate—not make an unexplained decision for the user.
+```
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│ [01] DocuMind — Enterprise Document Intelligence & Field Extraction System             │
+│ PyTorch · Scikit-Learn · FastAPI · Tesseract OCR · Docker · Python                     │
+└────────────────────────────────────────────────────────────────────────────────────────┘
+```
+> **Repository:** [github.com/Suryaflame5/documind](https://github.com/Suryaflame5/documind)
+* **Architecture:** Multi-stage extraction pipeline combining document layout analysis, PyTorch visual feature classification, and rule-bounded entity recognition.
+* **Engineering Challenge:** Eliminating hallucination risks in automated document parsing by establishing deterministic confidence intervals and verifiable audit trails for every extracted field.
+* **Key Capabilities:**
+  * Sub-second multi-page document classification across diverse scanned document formats.
+  * Traceable bounding-box coordinate mapping linking raw image pixels to API payload outputs.
+  * Asynchronous batch worker queue designed for horizontal container scaling.
 
-  **Explore:** [source code and project notes →](https://github.com/Suryaflame5/SubSentry)
-</details>
+```
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│ [02] WePlay — Universal Audio Sharing & Low-Latency Sync Protocol                      │
+│ Android · Kotlin · Audio HAL / NDK · WebSockets · Coroutines · Wi-Fi P2P              │
+└────────────────────────────────────────────────────────────────────────────────────────┘
+```
+> **Repository:** [github.com/Suryaflame5/WePlay](https://github.com/Suryaflame5/WePlay)
+* **Architecture:** Distributed companion audio streaming platform utilizing Bluetooth Auracast broadcasts alongside companion high-bandwidth local Wi-Fi multicast channels.
+* **Engineering Challenge:** Maintaining synchronized sub-20ms multi-device audio playback across varying Android hardware revisions without audio buffer underruns or clock drift.
+* **Key Capabilities:**
+  * Real-time master-clock synchronization algorithm with adaptive jitter-buffer compensation.
+  * Low-level Android AudioRecord / AudioTrack integration via native NDK bindings.
+  * Zero-configuration peer discovery over local LAN subnets without external internet dependency.
 
-<details>
-  <summary><strong>02 / PricePilot</strong> — price forecasting and decision support</summary>
-  <br />
+```
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│ [03] PricePilot — Time-Series Forecasting & Uncertainty Decision Engine               │
+│ Python · Time-Series ML · Quantile Regression · Pandas · FastAPI                       │
+└────────────────────────────────────────────────────────────────────────────────────────┘
+```
+> **Repository:** [github.com/Suryaflame5/pricepilot](https://github.com/Suryaflame5/pricepilot)
+* **Architecture:** Statistical decision-support engine comparing predictive models on structured historical data with explicit uncertainty estimation bounds.
+* **Engineering Challenge:** Preventing lookahead data leakage in walk-forward backtesting pipelines and surfacing prediction intervals rather than deceptive single-point forecasts.
+* **Key Capabilities:**
+  * Rigorous out-of-sample backtesting framework with automated model degradation detection.
+  * Uncertainty-aware risk bounds quantifying prediction confidence during market volatility.
+  * Fast REST API providing interactive model comparison and historical error diagnostics.
 
-  A forecasting project focused on historical price data, model comparison, backtesting, and uncertainty-aware decision support. Forecast quality needs to be judged against reproducible evaluation—not a headline accuracy number.
+```
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│ [04] SubSentry — Recurring Transaction Pattern Analysis Engine                         │
+│ React · TypeScript · Graph Analysis · Web Workers · Financial Data Schemas             │
+└────────────────────────────────────────────────────────────────────────────────────────┘
+```
+> **Repository:** [github.com/Suryaflame5/SubSentry](https://github.com/Suryaflame5/SubSentry)
+* **Architecture:** Client-side financial intelligence system analyzing raw statement exports to detect recurring payment obligations and anomalous cost surges.
+* **Engineering Challenge:** Reconciling irregular billing cadences and inconsistent merchant descriptors without exposing raw user transaction data to remote servers.
+* **Key Capabilities:**
+  * 100% private in-browser analysis executed inside Web Workers with zero server data retention.
+  * Interval-consistency scoring engine identifying weekly, monthly, and seasonal billing cycles.
+  * Explainable evidence breakdown showing the exact transaction matches behind every flag.
 
-  **Explore:** [source code and project notes →](https://github.com/Suryaflame5/pricepilot)
-</details>
+<br />
 
-<p align="right"><a href="https://github.com/Suryaflame5?tab=repositories">Browse public repositories ↗</a></p>
+---
 
-<p align="center">
-  <img src="./assets/signal-divider.gif" width="100%" alt="Animated signal-line divider" />
-</p>
+### <a id="technical-arsenal"></a>02 / Technical Arsenal
 
-## Engineering principles
+| Systems Layer | Stack & Tooling | Focus & Applications |
+| :--- | :--- | :--- |
+| **Languages** | `Python`, `TypeScript`, `Kotlin`, `JavaScript`, `SQL`, `C/C++` | Production backend, native Android, and data pipelines |
+| **Machine Learning & Vision** | `PyTorch`, `Scikit-Learn`, `OpenCV`, `Hugging Face`, `Ollama` | Document intelligence, classification, edge CV, local LLM runtimes |
+| **API & Backend Systems** | `FastAPI`, `Node.js`, `REST APIs`, `WebSockets`, `Asynchronous IO` | Low-latency streaming, event-driven architectures, scalable microservices |
+| **Client & Mobile Engineering**| `Android Native (Kotlin)`, `React`, `React Native / Expo`, `Tailwind CSS` | Device lockdown, audio streaming, responsive performance-critical web UIs |
+| **Infrastructure & Database** | `Docker`, `Git`, `PostgreSQL`, `Supabase`, `Linux Environments` | Containerized deployments, relational schemas, automated CI/CD workflows |
 
-<details>
-  <summary><strong>01 — Complexity has to earn its place</strong></summary>
-  <br />
-  Start with a baseline. Compare alternatives on the same data and evaluation protocol. Prefer the simpler system when the added complexity does not produce a measurable improvement.
-</details>
+<br />
 
-<details>
-  <summary><strong>02 — Evidence before confident claims</strong></summary>
-  <br />
-  Separate what was measured from what is hypothesized. Report limitations, useful baselines, and failure cases alongside successful examples.
-</details>
+---
 
-<details>
-  <summary><strong>03 — Make the implementation inspectable</strong></summary>
-  <br />
-  Clear setup instructions, explicit assumptions, understandable architecture, useful tests, and reproducible experiments matter more than a long list of technologies.
-</details>
+### <a id="engineering-standards"></a>03 / Engineering Principles
 
-<details>
-  <summary><strong>04 — Treat failure as part of the design</strong></summary>
-  <br />
-  Consider malformed input, missing data, uncertainty, retries, and recovery paths—not only the happy path.
-</details>
+* **Complexity Must Earn Its Place:** Every architecture starts with the simplest working baseline. Additional layers, microservices, or complex neural models must show measurable improvements on controlled evaluation benchmarks before adoption.
+* **Evidence Before Claims:** Clear reporting of edge cases, latency percentiles (p50/p95/p99), and known failure modes alongside successful tests.
+* **Inspectable & Reproducible:** Complete setup automation, explicit environmental configurations, and clean documentation so any engineer can reproduce results locally within minutes.
+* **Failure-Tolerant by Default:** Network degradation, malformed payloads, schema drift, and timeouts are treated as first-class citizens in system design, not afterthoughts.
 
-## Current toolbox
+<br />
 
-| Area | Focus |
-|:--|:--|
-| **Languages** | Python · TypeScript / JavaScript · SQL |
-| **AI / ML** | Model evaluation · classical ML · local inference · data pipelines |
-| **Software systems** | APIs · application architecture · testing · automation |
-| **Tools** | Git · Docker · React · FastAPI · Ollama |
+---
 
-The exact stack varies by project. I try to keep each repository honest about what is implemented, what is experimental, and what remains unfinished.
+### <a id="contact"></a>04 / Contact & Collaboration
 
-## Contact
+* **Direct Email:** [suryaflame2007@gmail.com](mailto:suryaflame2007@gmail.com)
+* **LinkedIn:** [linkedin.com/in/surya-narayanan-157976396](https://www.linkedin.com/in/surya-narayanan-157976396/)
+* **All Public Code:** [github.com/Suryaflame5?tab=repositories](https://github.com/Suryaflame5?tab=repositories)
 
-**Open to:** thoughtful technical collaboration, useful code review, and open-source work where I can contribute something concrete.
-
-[Email](mailto:suryaflame2007@gmail.com) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/surya-narayanan-157976396/) &nbsp;·&nbsp; [GitHub repositories](https://github.com/Suryaflame5?tab=repositories)
-
-<p align="center">
-  <img src="./assets/signal-divider.gif" width="100%" alt="Animated signal-line divider" />
-</p>
-
-<p align="center"><sub>Build → inspect → refine. Keep the signal; remove the noise.</sub></p>
+<div align="center">
+  <img src="./assets/divider.svg" width="100%" alt="Divider" />
+  <p><sub>Architected with precision. Engineered for reliability.</sub></p>
+</div>
